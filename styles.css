@@ -36,11 +36,13 @@ body {
 .wrapper:after {
   content: "";
   position: absolute;
-  top: -212px;
+  /* top position adjusted */
+  top: -265px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
-  height: 230px;
+  /* height adjusted */
+  height: 285px;
   background: #353535;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.125);
 }
@@ -60,7 +62,6 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .card .info {
   position: absolute;
@@ -87,13 +88,19 @@ body {
   margin-top: 0px;
   margin-bottom: 4px;
   font-family: inherit;
-  color: #353535!important;
+  color: #353535 !important;
 }
 
 .text-muted {
-  color: #6c757d!important;
+  color: #6c757d !important;
 }
 
 .text-center {
-  text-align: center!important;
+  text-align: center !important;
+}
+
+/* add selecter to this class to adjust multipage cards */
+.page-wrapper {
+  position: relative;
+  height: 100vh;
 }
